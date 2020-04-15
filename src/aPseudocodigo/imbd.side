@@ -1,0 +1,149 @@
+{
+  "id": "1c1deaa0-3190-4547-b910-b9c951557aa4",
+  "version": "2.0",
+  "name": "imbd",
+  "url": "https://www.imdb.com/",
+  "tests": [{
+    "id": "cfd7f686-1e12-4ecf-bbfb-da1614bd3cdd",
+    "name": "Untitled",
+    "commands": [{
+      "id": "324df608-383d-47c4-9e93-f75916d3ef0b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5787e70a-837c-4f5b-bd3a-bfd3b204f074",
+      "comment": "",
+      "command": "click",
+      "target": "css=.imdb-header__signin-text > .ipc-button__text",
+      "targets": [
+        ["css=.imdb-header__signin-text > .ipc-button__text", "css:finder"],
+        ["xpath=//nav[@id='imdbHeader']/div[2]/div[5]/a/div", "xpath:idRelative"],
+        ["xpath=//div[5]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8efca84c-28fd-4f61-89ed-0c7c8e78e512",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(4) > .auth-provider-text",
+      "targets": [
+        ["css=.list-group-item:nth-child(4) > .auth-provider-text", "css:finder"],
+        ["xpath=//div[@id='signin-options']/div/div/a[4]/span[2]", "xpath:idRelative"],
+        ["xpath=//a[4]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign in with Google')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1ce70ce-ad8f-42ef-a8fc-dfb50eebc9de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.BHzsHc",
+      "targets": [
+        ["css=.BHzsHc", "css:finder"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/ul/li[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d91825bb-9d60-4277-bdf1-c87355e7dc4d",
+      "comment": "",
+      "command": "click",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23101297-b360-4470-bbb2-d016183788bb",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "criissthian.13"
+    }, {
+      "id": "2a896a33-8167-4137-9f71-3c6b326bdf5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#identifierNext .RveJvd",
+      "targets": [
+        ["css=#identifierNext .RveJvd", "css:finder"],
+        ["xpath=//div[@id='identifierNext']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4b8f950-3e08-4cc5-9e73-13bd82e70a74",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.I0VJ4d .whsOnd", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='password']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d1dca25-d99b-4ae0-9383-757af6f2272f",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.I0VJ4d .whsOnd", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='password']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "150goles"
+    }, {
+      "id": "0c29dddb-86da-4d97-b9f6-734dc8bfe7bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#passwordNext .RveJvd",
+      "targets": [
+        ["css=#passwordNext .RveJvd", "css:finder"],
+        ["xpath=//div[@id='passwordNext']/span/span", "xpath:idRelative"],
+        ["xpath=//div/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a47c38c-90a6-442d-84dc-b09b84821986",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=div:nth-child(2) > span:nth-child(1)",
+      "targets": [
+        ["css=div:nth-child(2) > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"]
+      ],
+      "value": "Contraseña incorrecta. Vuelve a intentarlo o haz clic en Contraseña olvidada para cambiarla."
+    }]
+  }],
+  "suites": [{
+    "id": "2593565a-9b24-4be9-b5d6-4cf5a6a20e52",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cfd7f686-1e12-4ecf-bbfb-da1614bd3cdd"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}

@@ -7,7 +7,7 @@ Imdb Capabilities 
 
 
 
-    Registro correcto  loginCorrecto()
+    registroCorrecto()
 { 	navegar(“https://imdb.com”) 
     registrarCuenta(cris, cris@cris.com, test@1234) 
 	validarCuenta(cris) 
@@ -21,15 +21,27 @@ Imdb Capabilities 
       Validar que aparece el nombre de usuario ("Cris")
     }
 
-	 navegar (url)
-	 { 	Ingresar a la página principal Home (“https://imdb.com”) 
-	    validar que cargan todos los elementos correctamente (elementos)
-	 }
-
-
 	 watchList (pelicula)
 	 {  Seleccionar la pelicula mas popular ("peliculamaspolular")
 	    Agregar pelicula al Watch list dando clic en (+)
 	    Dar clic en text link ("Watch List")
 	    Validar que la pelicula agregada aparece en la lista ("peliculamaspolular")
 	 }
+
+	 RegistrarUsuario (correo, contraseña)
+	 {  navegar(“https://imdb.com”)
+	    dar clic en singin
+	    dar clic en sign in with google
+	    seleccionar usar otra cuenta
+	    agregar correo (typeCorreo)
+	    dar clic en siguiente
+	    agregar contraseña (typepassword)
+	    dar clic en siguiente
+	    dar clic en create your imdb account
+	    Validar que aparece el nombre de usuario de la cuenta de correo
+	 }
+
+	 navegar (url)
+     { 	Ingresar a la página principal Home (“https://imdb.com”) 
+        validar que cargan todos los elementos correctamente
+     }
