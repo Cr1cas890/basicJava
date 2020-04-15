@@ -1,0 +1,35 @@
+Imdb Capabilities 
+1. Buscar películas 
+2. Obtener info de las películas 
+3. Agregar al watch list 
+4. registrarse
+5. Login   
+
+
+
+    Registro correcto  loginCorrecto()
+{ 	navegar(“https://imdb.com”) 
+    registrarCuenta(cris, cris@cris.com, test@1234) 
+	validarCuenta(cris) 
+}                                                                                                                               
+
+    LogIn (url)
+    { navegar(“https://imdb.com”) 
+      IngresarUsuario ("Cris")
+      IngresarPass ("test@1234")
+      Dar clic en boton ("LogIn")
+      Validar que aparece el nombre de usuario ("Cris")
+    }
+
+	 navegar (url)
+	 { 	Ingresar a la página principal Home (“https://imdb.com”) 
+	    validar que cargan todos los elementos correctamente (elementos)
+	 }
+
+
+	 watchList (pelicula)
+	 {  Seleccionar la pelicula mas popular ("peliculamaspolular")
+	    Agregar pelicula al Watch list dando clic en (+)
+	    Dar clic en text link ("Watch List")
+	    Validar que la pelicula agregada aparece en la lista ("peliculamaspolular")
+	 }
