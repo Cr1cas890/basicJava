@@ -29,7 +29,9 @@ Imdb Capabilities 
 	 }
 
 	 RegistrarUsuario (correo, contraseña)
-	 {  navegar(“https://imdb.com”)
+
+	 {
+	    navegar (url, user, password)
 	    dar clic en singin
 	    dar clic en sign in with google
 	    seleccionar usar otra cuenta
